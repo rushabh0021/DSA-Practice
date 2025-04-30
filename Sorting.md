@@ -15,3 +15,20 @@ function selectionSort(arr){
     }
     return copyArr;
 }
+
+2. Bubble Sort
+
+function bubbleSort(arr){
+    const outputArr = arr;
+    
+    for(let i= arr.length; i >= 0; i--){
+        for(let j= 0; j <= i; j++){
+            if(outputArr[j] > outputArr[j + 1]) {
+                const temp = outputArr[j];
+                outputArr[j] = outputArr[j+1];
+                outputArr[j+1] = temp;
+            }
+        }
+    }
+    return outputArr;
+}
